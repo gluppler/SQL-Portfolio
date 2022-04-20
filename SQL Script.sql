@@ -6,7 +6,7 @@ DROP TABLE CAR;
 
 
 
---CAR Table created by Student A:<Chew Zhan Hong B2000339>
+
 CREATE TABLE CAR (
     CarID      VARCHAR2(5) NOT NULL PRIMARY KEY,
     CarType    VARCHAR2(40) NOT NULL,
@@ -19,7 +19,7 @@ INSERT INTO CAR VALUES ('C0003','Truck', 'MV1260');
 INSERT INTO CAR VALUES ('C0004','Hatchback', 'VB1561');
 INSERT INTO CAR VALUES ('C0005','SUV', 'AB1469');
 
---CATEGORY Table created by Student B:<Lim We Chern B2000553>
+
 CREATE TABLE CATEGORY (
     CategoryID    VARCHAR2(5) NOT NULL PRIMARY KEY,
     CategoryName  VARCHAR2(40) NOT NULL
@@ -39,7 +39,7 @@ INSERT INTO CATEGORY VALUES ('G0011','KAYAKS:SINGLE, 14 FEET AND UNDER');
 INSERT INTO CATEGORY VALUES ('G0012','KAYAKS:SINGLE, STUDENT');
 INSERT INTO CATEGORY VALUES ('G0013','KAYAKS:DOUBLE KAYAK');
 
---PARTICIPANT Table created by Student A & B:<Chew Zhan Hong B2000339 & Lim We Chern B2000553>
+
 CREATE TABLE PARTICIPANT (
     ParticipantID  VARCHAR2(5) NOT NULL PRIMARY KEY,
     TeamID         VARCHAR2(5),
@@ -81,7 +81,7 @@ VALUES ('P0009', 'Jason Smith', '1st Street', 'S9', 'Los Angeles', 'California',
 INSERT INTO PARTICIPANT(ParticipantID,TeamID,FullName,Age,Gender,Highschool,Email,CellPhone,StreetAddress,City,PostalCode) 
 VALUES ('P0010', NULL,'Melissa Giles', '18', 'F', 'New York High', 'melissa@gmail.com', '016-5453 8111', '2nd Street', 'Manhattan', '22211');
 
---SELECTION Table created by Student B:<Lim We Chern B2000553>
+
 CREATE TABLE SELECTION (
     CATEGORY_CategoryID      VARCHAR2(5) NOT NULL,
     PARTICIPANT_ParticipantID  VARCHAR2(5) NOT NULL,
@@ -99,7 +99,7 @@ INSERT INTO SELECTION VALUES ('G0013','P0006');
 INSERT INTO SELECTION VALUES ('G0013','P0008');
 INSERT INTO SELECTION VALUES ('G0008','P0010');
 
---VERIFICATION Table created by Student A:<Chew Zhan Hong B2000553>
+
 CREATE TABLE VERIFICATION (
     PARTICIPANT_ParticipantID  VARCHAR2(5) NOT NULL,
     CAR_CarID                  VARCHAR2(5) NOT NULL,
